@@ -6,15 +6,19 @@
 @import "base/base";
 
 .container {
-    @include grid-container;
-    margin: $base-spacing auto;
-    max-width: 960px;
-  }
+  @include grid-container;
+  margin: $base-spacing auto;
+  max-width: 960px;
+}
 
-  .side-nav {
-    @include grid-column(4);
-  }
+.side-nav {
+  @include grid-column(4);
+}
 
-  .post-container {
-    @include grid-column(8);
-  }
+.post-container {
+  @include grid-column(8);
+}
+
+.date {
+  color: #bbbbbb;
+}
