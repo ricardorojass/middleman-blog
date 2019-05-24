@@ -3,3 +3,4 @@
 .sass-cache
 build/
 netlifyctl-debug.log
+.env
