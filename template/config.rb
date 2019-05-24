@@ -21,6 +21,11 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 
+activate :blog do |blog|
+  blog.tag_template = "tag.html"
+  blog.layout = "layouts/post-layout"
+end
+
 configure :production do
   activate :asset_hash
   activate :gzip

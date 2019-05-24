@@ -1,1 +1,9 @@
 <h1>Hello world</h1>
+<% blog.articles.each do |article| %>
+  <div class="post-block">
+    <h4><%= article.date.strftime('%b %e %Y') %></h4>
+    <h2><%= link_to article.title, article %> </h2>
+    <p><%= article.summary(250) %></p>
+    <%= link_to 'Read more…', article %>
+  </div>
+<% end %>

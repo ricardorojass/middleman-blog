@@ -12,3 +12,7 @@ gem "middleman-minify-html"
 gem "neat"
 gem "redcarpet"
 gem "sassc"
+
+
+gem "middleman-blog" , "~> 4.0"
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'

@@ -12,12 +12,6 @@
       <aside class="side-nav">
         <h1><%= link_to "Ricardo Rojas", "/"%></h1>
         <p>Join me on a journey through space and time</p>
-
-        <ul>
-          <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-          <% end %>
-        </ul>
       </aside>
        <section class="post-container">
         <%= yield %>
